@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Model Drawing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="three-container"></div>
+    <div class="toolbar">
+      <button class="tool-button active" id="pencilTool" title="Pencil">
+        <i class="fas fa-pencil-alt"></i>
+      </button>
+      <button class="tool-button" id="eraserTool" title="Eraser">
+        <i class="fas fa-eraser"></i>
+      </button>
+      <div class="tool-separator"></div>
+      <button class="tool-button" id="rectangleTool" title="Rectangle">
+        <i class="far fa-square"></i>
+      </button>
+      <button class="tool-button" id="circleTool" title="Circle">
+        <i class="far fa-circle"></i>
+      </button>
+      <button class="tool-button" id="clearButton" title="Clear">
+        <i class="fas fa-trash"></i>
+      </button>
+      <input type="color" id="colorPicker" value="#ffffff" style="width: 40px; height: 40px;">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
